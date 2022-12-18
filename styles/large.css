@@ -1,0 +1,31 @@
+@media (min-width: 64em) {
+    /* NAVIGATION */
+
+    nav ul li:first-child, nav ul li:nth-child(2), nav ul li:nth-child(3) {
+        padding: .5rem 1rem;
+    }
+
+    /* .icon {
+        padding: 
+    } */
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
+
+    
+  .navigation li {
+    flex: 1 1 auto;
+    display: block;
+  }
+
+  .navigation a {
+    text-align: center;
+  }
+
+}

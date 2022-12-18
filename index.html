@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>Bountiful Foods</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Final Project website for Lutho Masoka in WDD 230:
+     Web Frontend Development at Brigham Young University - Idaho" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+     <link rel="stylesheet" href="styles/base.css" />
+     <link rel="stylesheet" href="styles/large.css"
+     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500&display=swap" rel="stylesheet">
+     <!--Favicon-->
+     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <script defer src="scripts/weather.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="logo-img">
+                <img src="images/Bountiful Foods-logos_black.png" alt="business logo"/>
+            </div>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#" class="ham"><span>&#9776; Menu</span><span>X Menu</span></a></li>
+                    <li class="page"><a href="index.html">Home</a></li>
+                    <li class="page"><a href="fresh.html">Fresh</a></li>
+                    <li class="page"><a href="about.html">About</a></li>
+                    <li class="icon">
+                        <a href="https://www.linkedin.com/">
+                            <img src="images/linkedin-icon.png" alt="LinkedIn logo"/>
+                        </a>
+                    </li>
+                    <li class="icon">
+                        <a href="https://www.instagram.com/">
+                            <img src="images/instagram-icon.png" alt="Instagram logo"/>
+                        </a>
+                    </li>
+                    <li class="icon">
+                        <a href="https://www.twitter.com/">
+                            <img src="images/logo-twitter.png" alt="Twitter logo"/>
+                        </a>
+                    </li>
+                </ul>
+
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="content">
+                <section id="banner">
+                    <span>Invigorate Your Taste Buds</span>
+                    <a href="fresh.html" class="btn">Order Now</a>
+                    <picture>
+                        <source srcset="images/mix-of-vegetarian-organic-food-fruits-opt.webp" media="(min-width: 64em)">
+                        <source srcset="images/2400-mix-of-vegetarian-organic-food-fruits-medium.webp" media="(min-width: 32em)">
+                        <img src="images/2400-mix-of-vegetarian-organic-food-fruits-small.webp" alt="banner-image">
+                    </picture>
+                </section>
+                <h1>A Small Sip of the Coast</h1>
+                <section id="summary">
+                <div class="sip-img">
+                    <img src="images/strawberry-lemonade.jpg" alt="">
+                </div>
+                <article id="san-diego">
+                    <h2>About San Diego</h2>
+                    <p>
+                        San Diego is renowned for its idyllic climate, 
+                        70 miles of pristine beaches and a dazzling array of world-class family attractions. 
+                        Popular attractions include the world-famous San Diego Zoo and San Diego Zoo Safari Park, 
+                        SeaWorld San Diego and LEGOLAND California. San Diego offers an expansive variety of things
+                         to see and do, appealing to guests of all ages
+                    </p>
+                    <figure>
+                        <img src="images/san-diego-beach.webp" alt="">
+                        <figcaption>
+                            <a href="https://www.freepik.com/free-photo/bag-beach-accessories-kept-sand_991188.htm#query=beach&position=2&from_view=keyword"><span>Image by awesomecontent</span></a> on Freepik
+                        </figcaption>
+                      </figure>
+                </article>
+                </section>
+                <h2 id="weather-head">Weather Forecast</h2>
+                <section id="weather-sect">
+                    <div class='wrapper'>
+
+                        <!-- <search>
+                          <form>
+                            <input class='searchbar transparent' id='search' type='text' placeholder='enter city, country' />
+                            <input class='button transparent' id='button' type="submit" value='GO' />
+                          </form>
+                        </search> -->
+                      
+                        <div class='panel'>
+                          <h2 class='city' id='city'></h2>
+                          <div class='weather' id='weather'>
+                            <div class='group secondary'>
+                              <h3 id='dt'></h3>
+                              <h3 id='description'></h3>
+                            </div>
+                            <div class='group secondary'>
+                              <h3 id='wind'></h3>
+                              <h3 id='humidity'></h3>
+                            </div>
+                            <div class='temperature' id='temperature'>
+                              <h1 class='temp' id='temp'><img src="" alt="" id='condition' /> <span id='num'></span><a class='fahrenheit active' id='fahrenheit' href="#">&deg;F</a></h1>
+                            </div>
+                            <div class='forecast' id='forecast'></div>
+                          </div>
+                        </div>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <div class="upper-footer">
+                <div class="logo-img">
+                    <img src="images/Bountiful Foods-logos_black.png" alt="chamber logo"/>
+                    <p class="address">20 King Edward Drive <span>PE, South Africa 888</span></p>
+                </div>
+                <!-- <a href="https://www.vecteezy.com/free-photos">Free Stock photos by Vecteezy</a> -->
+                <p> Weather service brought to you by <a href="https://openweathermap.org/api">OpenWeatherMap API</a>.</p>
+                <div>
+                    <p class="contact-info">Contact 
+                        <span>info@bcob.com</span>
+                        <span>(027) 555-888</span>
+                    </p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13500789.809101062!2d18.251486369681842!3d-34.297218343615434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1c34a689d9ee1251%3A0xe85d630c1fa4e8a0!2sSouth%20Africa!5e0!3m2!1sen!2sus!4v1657264666395!5m2!1sen!2sus" width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <hr>
+            <p class="lower-footer">
+                <span class="copywrite">
+                    &copy; <span id="year"></span>
+                </span>
+                <span>
+                   . Bay Chamber of Businesses | <span>Lutho Masoka</span> | <span>WDD 230 Project</span> | <span>Last Modification: <span id="currentdate"></span></span>
+                </span>
+            </p>
+        </footer>
+    </body>
+</html>
