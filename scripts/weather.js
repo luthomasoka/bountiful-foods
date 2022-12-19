@@ -89,7 +89,7 @@ function iterateForcast(index, weatherData, weeklyForcast) {
 
 function displayResults(weatherData) {
 
-    dt.textContent = new Date(weatherData.list[0].dt_txt * 1000).toString().split(' ');
+    dt.textContent = weatherData.list[0].dt_txt.substring(0, 10);
     console.log(dt);
 
     city.textContent = weatherData.city.name;

@@ -81,6 +81,7 @@ fetch(requestURL)
           let phoneNum = document.createElement('span');
           let mail = document.createElement('span');
           let drink = document.createElement('h2');
+          let instr = document.createElement('span');
         
           let firstFruit = document.createElement('span');
           let secondFruit = document.createElement('span');
@@ -109,6 +110,8 @@ fetch(requestURL)
           phoneNum.setAttribute('class', phone.value);
           mail.textContent = `Email: ${email.value}`;
           mail.setAttribute('class', email.value);
+          instr.textContent = `Special instructions to the order: ${instructions.value}`;
+          instr.setAttribute('class', instructions.value);
 
           fruitList.forEach((fruitObj) => {
             if (fruitObj.name === first.value) {
@@ -167,6 +170,7 @@ fetch(requestURL)
           drinkSection.appendChild(fats);
           drinkSection.appendChild(sugars);
           drinkSection.appendChild(cals);
+          drinkSection.appendChild(instr);
 
           container.appendChild(perSection);
           container.appendChild(drinkSection);
