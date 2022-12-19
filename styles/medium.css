@@ -1,0 +1,47 @@
+@media (min-width: 32.5em) {
+
+    .navigation {
+    display: flex;
+    flex-direction: column;
+    }
+
+    .navigation a {text-align: center;}
+
+    picture img {
+        height: 60vh;
+    }
+
+    .btn {
+        /* margin-top: -7rem; */
+        margin-left: 15rem;
+        color: white;
+        font-size: 1.5rem;
+        width: 30%;
+        height: 3rem;
+        
+    }
+    
+    .upper-footer {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    #logo-img img {
+    width: 100%;
+    align-self: center;
+    }
+
+    .contact-info {
+    align-self: flex-end;
+    }
+    
+    /* nav ul li a:first-child {border: none;} */
+
+    .about-banner img {
+        width: 50%;
+      }
+    
+      form {
+        width: 35rem;
+      }
+}

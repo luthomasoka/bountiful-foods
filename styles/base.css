@@ -423,10 +423,15 @@ footer a {
   color: var(--black);
 }
 
+.map {
+  display: flex;
+  justify-items: center;
+}
+
 /* * * * * * * * * * FORM * * * * * * * *  */
 
 form {
-  width: 60rem;
+  width: 25rem;
   border-radius: .5rem;
   box-shadow: var(--box-shadow);
   border: .1rem solid rgba(0,0,0,.2);
@@ -461,7 +466,7 @@ select, input, textarea{
 
 textarea {
   height: 10rem;
-  width: 95%;
+  width: 90%;
   resize: none;
 }
 
@@ -485,3 +490,18 @@ textarea {
   flex-direction: column;
 }
 
+/* * * * * * * * * * ABOUT BANNER * * * * * * * *  */
+
+.about-banner img {
+  width: 100%;
+}
+
+.about p {
+  border: .8rem solid #B34E00;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
