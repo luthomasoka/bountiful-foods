@@ -43,6 +43,7 @@ header {
     top: 0; left: 0; right: 0;
     padding: 0;
     color: #fff;
+    background-color: white;
 }
 
 .logo-img img {width: 30%;}
@@ -53,11 +54,6 @@ header {
     width: 30%;
 }
 
-.page {
-    align-items: center;
-    text-align: center;
-}
-
 a {
     color: var(--light-color);
     font-size: 1.7rem;
@@ -66,18 +62,20 @@ a {
     padding: .5rem 1.2rem;
 }
 
-.navigation {
-    margin: 0;
-    padding: 0;
+.navigation li:first-child {display: block;}
+
+.navigation li {
+  display:  none;
+  margin-left: 25px;
 }
 
 
-/* nav ul li a {
+nav ul li a {
     display: block;
     padding: .8rem;
     text-decoration: none;
     border-top: 1px solid rgba(0, 0, 0, 0.5);
-} */
+}
 
 /* nav {
     display: flex;
@@ -86,17 +84,17 @@ a {
 
 nav ul li a:first-child {border: none;}
 
-/* .ham {font-size: 2rem;}
+.ham {font-size: 2rem;}
 
 .ham span:nth-child(1) {display: block;}
 
-.ham span:nth-child(2) {display: none;} */
+.ham span:nth-child(2) {display: none;}
 
-/* .responsive li {display: block;}
+.responsive li {display: block;}
 
 .responsive .ham span:nth-child(1) {display: none;}
 
-.responsive .ham span:nth-child(2) {display: block;} */
+.responsive .ham span:nth-child(2) {display: block;}
 
 
 
@@ -128,23 +126,23 @@ nav a:hover {
 /* * * * * * * * * * BANNER * * * * * * * *  */
 
 #banner {
-    margin-top: 5rem;
+    margin-top: 1.6rem;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
 }
 
 picture img {
     grid-row: 1;
     grid-column: 1 / 2;
     width: 100%;
-    height: 90vh;
+    height: auto;
 }
 
 #banner span {
     grid-column: 1 / 2;
-    font-size: 4.5rem;
+    font-size: 4rem;
     align-self: center;
-    margin-left: 5rem;
+    margin-left: 2rem;
     color: var(--theme-red);
 }
 
@@ -156,11 +154,9 @@ picture img {
     grid-row: 3;
 }
 
-
-
 .btn {
-  margin-top: -7rem;
-  margin-left: 5rem;
+  margin-top: 1rem;
+  margin-left: 10rem;
   grid-row: 1;
   color: white;
   opacity: 0.60;
@@ -184,7 +180,7 @@ picture img {
 #summary {
     grid-row: 3;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
     background-color: rgb(236, 236, 236);
     height: auto;
 }
@@ -203,17 +199,13 @@ picture img {
 
 h1 {
     grid-row: 2;
-    text-align: center;
-    font-size: 2.5rem;
+    /* text-align: center; */
+    margin-left: 1.5rem;
+    font-size: 2rem;
     color: var(--theme-red);
     line-height: 1.2rem;
-    margin: 0;
     display: inline;
 }
-
-/* article {
-    border: .4rem solid #ffc414 ;
-} */
 
 article h2 {
     margin: 1.5rem;
@@ -227,8 +219,8 @@ article h2 {
 article p {
     grid-column: 2;
     grid-row: 2;
-    font-size: 1.4rem;
-    margin: 1rem;
+    font-size: 1.2rem;
+    margin: 0;
 }
 
 #san-diego figure {
@@ -295,7 +287,7 @@ figcaption span {
 .active {opacity: 1;}
 
 .wrapper {
-  width: 480px;
+  width: auto;
   margin: 0 auto;
 }
 
@@ -316,15 +308,18 @@ figcaption span {
   float: right;
   width: 100px;
 }
+
 .panel {
   width: 100%;
   display: inline-block;
 }
+
 .weather {
   width: 100%;
   margin-top: 20px;
   display: inline-block;
 }
+
 .city {
   text-align: left;
   border-bottom: solid thin white;
@@ -332,6 +327,7 @@ figcaption span {
   color: #E8E8E8;
   color: rgba(255, 255, 255, 0.7);
 }
+
 .group {
   width: 165px;
   margin-bottom: 20px;
@@ -339,30 +335,36 @@ figcaption span {
   float: right;
   clear: both;
 }
+
 .temp {
   font-size: 4.5em;
   font-weight: 300;
   line-height: 0.75;
 }
+
 .celsius,
 .fahrenheit,
 .divider {
   font-size: 1.75rem;
   vertical-align: super;
 }
+
 .divider {
   margin: 0 0.05em;
 }
+
 .forecast {
   display: table;
   text-transform: uppercase;
   width: 100%;
 }
+
 .block {
   display: table-cell;
   padding: 1.5em 0 0 0;
   text-align: center;
 }
+
 .high {
   font-weight: 300;
   margin: 0.25em 0;
@@ -398,13 +400,21 @@ footer {
   justify-content: space-between;
 }
 
-.upper-footer .logo-img {width: 40%;}
+.upper-footer .logo-img img{width: 50%;}
 
 .lower-footer {
     display: block;
     text-align: center;
     padding: 2rem;
     margin: 0;
+}
+
+footer p {
+  color: white;
+}
+
+footer a {
+  color: white;
 }
 
 .lower-footer p {
@@ -427,6 +437,7 @@ form {
 
 fieldset {
   margin-bottom: 3rem;
+  color: #e74e28;
 }
 
 label {
@@ -445,6 +456,7 @@ select, input, textarea{
   text-transform: none;
   width: 50%;
   margin-bottom: 1rem;
+  border-color: #eee;
 }
 
 textarea {

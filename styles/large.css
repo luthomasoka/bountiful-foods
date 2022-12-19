@@ -5,9 +5,34 @@
         padding: .5rem 1rem;
     }
 
-    /* .icon {
-        padding: 
-    } */
+    #banner {
+      margin-top: 1.6rem;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+  }
+
+  picture img {
+    height: 90vh;
+}
+
+  #banner span {
+    font-size: 4.5rem;
+    margin-left: 5rem;
+}
+
+  .btn {
+    margin-top: -7rem;
+    margin-left: 5rem;
+    grid-row: 1;
+    color: white;
+    opacity: 0.60;
+    font-size: 1.5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    width: 30%;
+    height: 3rem;
+    background: #50514F;
+    }
 
     .navigation {
         display: flex;
@@ -27,5 +52,25 @@
   .navigation a {
     text-align: center;
   }
+
+  #summary {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 0;
+}
+
+article p {
+  font-size: 1.4rem;
+  margin: 1rem;
+}
+
+.wrapper {
+  width: 480px;
+}
 
 }
